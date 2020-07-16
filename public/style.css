@@ -13,7 +13,7 @@ h1
 input,
 button
 {
-    border:1px solid #ccc;
+    border:1px solid rgb(150, 19, 19);
     font-size:5vw;
     line-height:7vw;
     height:10vw;
@@ -35,7 +35,7 @@ button
 #chats dt
 {
     margin: 2vw 0;
-    border:1px solid #333;
+    border:1px solid rgb(238, 241, 20);
     border-radius:3vw;
     padding:1vw 3vw;
     display: inline-block;
@@ -44,7 +44,7 @@ button
 {
     margin-left: 8vw;
     position: relative;
-    background-color:#ccc;
+    background-color:rgb(128, 42, 139);
     border-radius:3vw;
     padding:1vw 3vw;
 }
@@ -63,7 +63,7 @@ button
     left: -6vw;
     margin-top: -7vw;
     border: 3vw solid transparent;
-    border-right: 8vw solid #ccc;
+    border-right: 8vw solid rgb(209, 95, 29);
     transform: rotate(40deg);
     z-index: -1;
 }
