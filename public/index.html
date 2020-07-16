@@ -1,22 +1,21 @@
-<div class="chat-box">
-  <div class="chat-face">
-    <img src="[自分の画像URL]" alt="自分のチャット画像です。" width="90" height="90">
-  </div>
-  <div class="chat-area">
-    <div class="chat-hukidashi">
-      ふきだしなのですーふきだしですーふきだー
-    </div>
-  </div>
-</div>
-
-<div class="chat-box">
-  <div class="chat-face">
-    <img src="[相手の画像URL]" alt="誰かのチャット画像です。" width="90" height="90">
-  </div>
-  <div class="chat-area">
-    <div class="chat-hukidashi someone">
-      ふきだしだよ<br>
-      へへへ
-    </div>
-  </div>
-</div>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Obirin2020 chat</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1>チャット</h1>
+    <dl id="chats"></dl>
+    <form id="nameform">
+      <input id="name" autocomplete="off" placeholder="表示名" /><button>参加</button>
+    </form>
+    <form id="form">
+      <input id="msg" autocomplete="off" /><button>送信</button>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
