@@ -4,7 +4,7 @@
 }
 h1
 {
-    text-align: center;
+    text-align: left;
     background-color: rgb(34, 18, 252);
     color: rgb(255, 255, 255);
     font-size:5vw;
@@ -74,5 +74,5 @@ button
 }
 form
 {
-    text-align:left;
+    text-align:center;
 }
