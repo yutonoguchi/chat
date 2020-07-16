@@ -1,78 +1,50 @@
-*
-{
-    box-sizing: border-box;
+/* チャットレイアウト */
+.chat-box {
+    width: 100%;
+    height: auto;
+    overflow: hidden; /*floatの解除*/
+    margin-bottom: 20px;
 }
-h1
-{
-    text-align: left;
-    background-color: rgb(34, 18, 252);
-    color: rgb(255, 255, 255);
-    font-size:5vw;
-    font-family: Arial, Helvetica, sans-serif;
+.chat-face {
+    float: left;
+    margin-right: -120px;
 }
-input,
-button
-{
-    border:1px solid rgb(34, 18, 252);
-    font-size:5vw;
-    line-height:7vw;
-    height:10vw;
-    padding:0 5vw;
-    outline: 0;
+.chat-face img{
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 4px #ddd;
 }
-input
-{
-    border-radius:5vw 0 0 5vw;
+.chat-area {
+    width: 100%;
+    float: right;
 }
-button
-{
-    border-radius:0 5vw 5vw 0;
+.chat-hukidashi {
+    display: inline-block; /*コメントの文字数に合わせて可変*/
+    padding: 15px 20px;
+    margin-left: 120px;
+    margin-top: 8px;
+    /* border: 1px solid gray; ←削除 */
+    border-radius: 10px;
+    position: relative; /*追記*/
+    background-color: #D9F0FF; /*追記*/
 }
-#chats
-{
-    font-size:5vw;
-}
-#chats dt
-{
-    margin: 2vw 0;
-    border:1px solid rgb(34, 18, 252);
-    border-radius:3vw;
-    padding:1vw 3vw;
-    display: inline-block;
-}
-#chats dt+dd
-{
-    margin-left: 8vw;
-    position: relative;
-    background-color:rgb(34, 18, 252);
-    border-radius:3vw;
-    padding:1vw 3vw;
-}
-#chats dd+dd
-{
-    margin-left: 10vw;
-    font-size:2.5vw;
-}
-
-#chats dt+dd::before
-{
-    content: '';
-    display: block;
+/* ↓追記↓ */
+.chat-hukidashi:after {
+    content: "";
     position: absolute;
-    top: 50%;
-    left: -6vw;
-    margin-top: -7vw;
-    border: 3vw solid transparent;
-    border-right: 8vw solid rgb(34, 18, 252);
-    transform: rotate(40deg);
-    z-index: -1;
+    top: 50%; left: -10px;
+    margin-top: -10px;
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #D9F0FF transparent transparent;
 }
-
-#form
-{
-    display:none;
+.someone {
+    background-color: #BCF5A9;
 }
-form
-{
-    text-align:center;
+.someone:after {
+    border-color: transparent #BCF5A9 transparent transparent;
 }
+/* ↑追記↑ */
