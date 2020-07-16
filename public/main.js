@@ -15,7 +15,7 @@ nameform.addEventListener('submit', function(event){
 
     socketio.emit('signin');
 
-    const msg = {msg: username + 'さんが参加しました', name: '新規参加者'};
+    const msg = {msg: username + 'さんが参加しました', name:'システム'};
     socketio.emit('message', msg);
   }
 
